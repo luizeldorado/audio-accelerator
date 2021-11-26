@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Audio accelerator</title>
+</head>
+
+<fieldset class='file-chooser'>
+	<legend>File chooser</legend>
+	<div><input class='file' type=file accept='audio/*'> <button class='file-load'>Load</button></div>
+	<div>or</div>
+	<div><input class='url' type=text /> <button class='url-load'>Load</button></div>
+</fieldset>
+
+<fieldset>
+	<legend>Settings</legend>
+	<div>
+		<label><input class='type-linear' type='radio' name='type' checked />Linear</label>
+		<label><input class='type-exponential' type='radio' name='type' />Exponential</label>
+	</div>
+	<div><label>Change in speed per second: <input class='change-amount' type=number step=any value=0.01 /></label></div>
+	<div><label>Initial speed: <input class='start-amount' type=number step=any value=1 /></label></div>
+</fieldset>
+
+<div class='status'>Ready.</div>
+
+<button class='play-stop'>Play</button>
+
+<div class='playback-rate'></div>
